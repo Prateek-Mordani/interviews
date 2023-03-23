@@ -1,9 +1,9 @@
 <!-- Edit Quote -->
 <template>
-  <h3 class="slds-page-header__title">Welcome to quote {quoteData.name}!</h3>
-  Quote Project Ends On:
-  <lightning-formatted-date-time
-    value={quoteData.endDate}
-    time-zone="UTC"
-  ></lightning-formatted-date-time>
+ <lightning-card title="Welcome to quote Provus Test Quote">
+  <lightning-input label='Start Date' type="date" value={startDate} onchange={handleChange}></lightning-input>
+  <lightning-input label='End Date' type="date" value={endDate} onchange={handleChange}></lightning-input><br/>
+  <lightning-button label='Save' onclick={handleSave}></lightning-button>
+
+ </lightning-card>
 </template>
